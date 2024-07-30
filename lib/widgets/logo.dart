@@ -17,7 +17,7 @@ class Logo extends StatelessWidget {
       child: Row(
         children: [
           const Text(
-            "AFD",
+            "FDA",
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
