@@ -48,7 +48,7 @@ class MainDesktop extends StatelessWidget {
           ),
           Image.asset(
             "assets/my_table.png",
-            width: screenWidth / 3,
+            width: screenWidth / 2,
           ),
         ],
       ),
