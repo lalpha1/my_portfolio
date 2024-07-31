@@ -5,8 +5,10 @@ import 'package:flutter/widgets.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/constants/skill_items.dart';
+import 'package:my_portfolio/utils/project_utils.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
 
+import '../widgets/project_card.dart';
 import '../widgets/drawer_mobile.dart';
 import '../widgets/header_desktop.dart';
 import '../widgets/main_desktop.dart';
@@ -87,9 +89,25 @@ class _HomePageState extends State<HomePage> {
 
             // PROJECTS
             Container(
-              height: 500,
-              width: double.maxFinite,
-              //color: Colors.blueGrey,
+              width: screenWidth,
+              padding: EdgeInsets.fromLTRB(25, 20, 25, 60),
+              child: Column(
+                children: [
+                  // title
+                  Text(
+                    "Work Projects",
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: CustomColor.whitePrimary),
+                  ),
+
+                  //card
+                  ProjectCard(
+                    project: workProjects.first,
+                  )
+                ],
+              ),
             ),
 
             // CONTACT
