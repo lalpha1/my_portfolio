@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/project_utils.dart';
 
 import '../constants/colors.dart';
-import 'dart:js' as js;
+//import 'dart:js' as js;
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
@@ -15,7 +15,7 @@ class ProjectCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       clipBehavior: Clip.antiAlias,
-      height: 280,
+      height: 300,
       width: 250,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
@@ -40,10 +40,14 @@ class ProjectCard extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(12, 0, 12, 12),
-            child: Text(
-              project.subtitle,
-              style: TextStyle(
-                color: CustomColor.whiteSecondary,
+            child: SizedBox(
+              height: 35,
+              child: Text(
+                project.subtitle,
+                style: TextStyle(
+                  fontSize: 11,
+                  color: CustomColor.whiteSecondary,
+                ),
               ),
             ),
           ),
@@ -64,7 +68,7 @@ class ProjectCard extends StatelessWidget {
                   GestureDetector(
                     child: InkWell(
                       onTap: () {
-                        js.context.callMethod("open", [project.androidLink]);
+                        //js.context.callMethod("open", [project.androidLink]);
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -79,7 +83,7 @@ class ProjectCard extends StatelessWidget {
                   GestureDetector(
                     child: InkWell(
                       onTap: () {
-                        js.context.callMethod("open", [project.iosLink]);
+                        //js.context.callMethod("open", [project.iosLink]);
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -94,7 +98,7 @@ class ProjectCard extends StatelessWidget {
                   GestureDetector(
                     child: InkWell(
                       onTap: () {
-                        js.context.callMethod("open", [project.webLink]);
+                        //   js.context.callMethod("open", [project.webLink]);
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),

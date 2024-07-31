@@ -4,15 +4,18 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
-import 'package:my_portfolio/constants/skill_items.dart';
+//import 'package:my_portfolio/constants/skill_items.dart';
 import 'package:my_portfolio/utils/project_utils.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
 
+import '../widgets/contact_section.dart';
+import '../widgets/custum_text_field.dart';
 import '../widgets/project_card.dart';
 import '../widgets/drawer_mobile.dart';
 import '../widgets/header_desktop.dart';
 import '../widgets/main_desktop.dart';
 import '../widgets/main_mobile.dart';
+import '../widgets/projects_section.dart';
 import '../widgets/skills_desktop.dart';
 import '../widgets/skills_mobile.dart';
 
@@ -32,6 +35,7 @@ class _HomePageState extends State<HomePage> {
     final scaffoldKey = GlobalKey<ScaffoldState>();
 
     return LayoutBuilder(builder: (context, constraints) {
+      var projectsSection = ProjectsSection;
       return Scaffold(
         key: scaffoldKey,
         endDrawer: constraints.maxWidth >= kMinDesktopWidth
@@ -88,34 +92,10 @@ class _HomePageState extends State<HomePage> {
             ),
 
             // PROJECTS
-            Container(
-              width: screenWidth,
-              padding: EdgeInsets.fromLTRB(25, 20, 25, 60),
-              child: Column(
-                children: [
-                  // title
-                  Text(
-                    "Work Projects",
-                    style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: CustomColor.whitePrimary),
-                  ),
-
-                  //card
-                  ProjectCard(
-                    project: workProjects.first,
-                  )
-                ],
-              ),
-            ),
+            ProjectsSection(screenWidth: screenWidth),
 
             // CONTACT
-            Container(
-              height: 500,
-              width: double.maxFinite,
-              color: Colors.blueGrey,
-            ),
+            ContactSection(),
             // FOOTER
           ],
         ),

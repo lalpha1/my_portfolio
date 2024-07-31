@@ -39,15 +39,28 @@ List<ProjectUtils> hobbyProjectUtils = [
           "An app where users can search for recipes based on ingredients they have at home. It can include features like recipe ratings, cooking time, and dietary preferences.",
       androidLink: "#",
       webLink: "#",
-      iosLink: "#")
+      iosLink: "#"),
+  ProjectUtils(
+      image: "assets/projects/finance_tracker.png",
+      title: "Finance Tracker",
+      subtitle:
+          "This app helps users manage their personal finances by tracking their",
+      webLink: "#"),
+  ProjectUtils(
+    image: "assets/projects/travel_planer.png",
+    title: "Travel Planner",
+    subtitle:
+        "An app that assists users in planning their trips by organizing itineraries, booking accommodations, and finding attractions. It can include maps, travel tips, and expense tracking.",
+    androidLink: "#",
+  )
 ];
 
 List<ProjectUtils> workProjects = [
   ProjectUtils(
-      image: "assets/finane_tracker.png",
+      image: "assets/projects/finance_tracker.png",
       title: "Finance Tracker",
       subtitle:
-          "This app helps users manage their personal finances by tracking their income and expenses. It includes features like budget setting, expense categorization, and financial reports.",
+          "This app helps users manage their personal finances by tracking their",
       webLink: "#"),
   ProjectUtils(
     image: "assets/projects/travel_planer.png",
