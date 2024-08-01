@@ -16,4 +16,28 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## Installation
-1- clone 
+### 1- Clone the repository
+git clone https://github.com/lalpha1/my_portfolio.git
+
+### 2- Navigate to the project directorry
+cd my_portfolio
+
+### 3- Run the application
+* **For web**:
+* flutter run -d chrome
+
+* **For mobile (choose your platform):**
+* flutter run -d android
+* flutter run -d ios
+
+* **For desktop:**
+* flutter run -d windows
+- flutter run -d macos
+- flutter run -d linux
+
+## Contributing
+Contributions are welcome! Please fork this repository and submit a pull request with your changes. Ensure you follow the standard Flutter coding conventions.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Feel free to modify this template to fit the specifics of your project.
