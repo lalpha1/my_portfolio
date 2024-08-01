@@ -1,7 +1,7 @@
 # my_portfolio
 
 A new Flutter project.
-[![Presentation](https://youtu.be/2RV1d07tRng)
+[![Presentation](https://github.com/lalpha1/my_portfolio/blob/main/Screenshot%202024-08-01%20065507.png)](https://youtu.be/2RV1d07tRng)
 
 ## Getting Started
 
